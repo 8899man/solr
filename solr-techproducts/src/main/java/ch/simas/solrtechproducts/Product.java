@@ -24,9 +24,6 @@ public class Product {
 	@Field("cat")
 	private List<String> category;
 
-	@Field("store")
-	private Point location;
-
 	public String getId() {
 		return id;
 	}
@@ -59,14 +56,6 @@ public class Product {
 		this.category = category;
 	}
 
-	public Point getLocation() {
-		return location;
-	}
-
-	public void setLocation(Point location) {
-		this.location = location;
-	}
-
     @Override
     public String toString() {
         return "Product{" +
@@ -74,7 +63,6 @@ public class Product {
                 ", name='" + name + '\'' +
                 ", price=" + price +
                 ", category=" + category +
-                ", location=" + location +
                 '}';
     }
 }
